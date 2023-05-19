@@ -12,7 +12,7 @@ function cambiarFondo() {
    if (indicFondo > fondos.length) {
       indicFondo = 0;
    }
-   fondo.src = `./mostrar/${fondos[indicFondo]}.png`;
+   fondo.src = `./mtr/${fondos[indicFondo]}.png`;
 }
 
 function fondoError() {
