@@ -9,9 +9,6 @@ var indicFondo = 0;
 
 function cambiarFondo() {
    indicFondo = Math.floor(Math.random() * fondos.length);
-   if (indicFondo > fondos.length) {
-      indicFondo = 0;
-   }
    fondo.src = `./mtr/${fondos[indicFondo]}.png`;
 }
 
