@@ -1,3 +1,25 @@
+//FUNCION IMAGENES
+
+var fondos = ["./mostrar/1.png", "./mostrar/2.png", "./mostrar/3.png", "./mostrar/4.png", "./mostrar/5.png", "./mostrar/6.png", "./mostrar/7.png", "./mostrar/8.png", "./mostrar/9.png", "./mostrar/10.png", "./mostrar/11.png", "./mostrar/12.png", "./mostrar/13.png"];
+
+var fondosError = ["./error/1.png", "./error/2.png", "./error/3.png", "./error/4.png", "./error/5.png", "./error/6.png", "./error/7.png", "./error/8.png", "./error/9.png", "./error/10.png", "./error/11.png", "./error/12.png", "./error/13.png"]
+
+var fondo = document.getElementById('imagen');
+var indicFondo = 0;
+
+function cambiarFondo() {
+   indicFondo = Math.floor(Math.random() * fondos.length);
+   if (indicFondo > fondos.length) {
+      indicFondo = 0;
+   }
+   fondo.src = fondos[indicFondo];
+}
+
+function fondoError() {
+   indicFondo = Math.floor(Math.random() * fondosError.length);
+   fondo.src = fondosError[indicFondo];
+}
+
 /*La letra "e" es convertida para "enter"
 La letra "i" es convertida para "imes"
 "La letra "o" es convertida para "ober
@@ -105,27 +127,7 @@ function copiarText() {
    setTimeout(() => document.getElementById('copiar').style.color = "black", 1000);
 }
 copiador.addEventListener('click', copiarText);
-//FUNCION IMAGENES
 
-var fondos = ["./mostrar/1.png", "./mostrar/2.png", "./mostrar/3.png", "./mostrar/4.png", "./mostrar/5.png", "./mostrar/6.png", "./mostrar/7.png", "./mostrar/8.png", "./mostrar/9.png", "./mostrar/10.png", "./mostrar/11.png", "./mostrar/12.png", "./mostrar/13.png"];
-
-var fondosError = ["./error/1.png", "./error/2.png", "./error/3.png", "./error/4.png", "./error/5.png", "./error/6.png", "./error/7.png", "./error/8.png", "./error/9.png", "./error/10.png", "./error/11.png", "./error/12.png", "./error/13.png"]
-
-var fondo = document.getElementById('imagen');
-var indicFondo = 0;
-
-function cambiarFondo() {
-   indicFondo = Math.floor(Math.random() * fondos.length);
-   if (indicFondo > fondos.length) {
-      indicFondo = 0;
-   }
-   fondo.src = fondos[indicFondo];
-}
-
-function fondoError() {
-   indicFondo = Math.floor(Math.random() * fondosError.length);
-   fondo.src = fondosError[indicFondo];
-}
 
 /*fondeador1.addEventListener('click', cambiarFondo);
 fondeador2.addEventListener('click', cambiarFondo);*/
