@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div id="box" class="fondo">
+    <video muted autoplay loop 
+        src="./fondo.mp4" type="video/mp4">
+    </video>
+    <div class="capa"></div>
+</div>
+<div class="contenedor">
+    <div id="ingresar" class="texto">
+        <div id="logos" class="logos">
+            <div class="educativos" >
+                <img src="./lgs/aluralogo2.png" alt="">
+                <div id="one">
+                    <img src="./lgs/oracle.png" alt="">
+                </div>
+            </div>
+            <h4>Encriptador</h4>
+            <div id="personales" >
+                <img id="astroyo" src="./lgs/sricker7.png" alt="">
+                <div id="enlaces">
+                    <a href="https://www.linkedin.com/in/diego-goart/" target="_blank"><img src="./lgs/linkedin.png" alt=""></a>
+                    <a href="https://github.com/Diegogo1991" target="_blank"><img src="./lgs/github.png" alt=""></a>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="areaText">
+            <!--<input id="parrafo" class="textarea" type="text">-->
+            <textarea id="parrafo" class="textarea" placeholder="Ingrese el texto para encriptar/desencriptar"></textarea>
+        </div>
+        <div class="acciones">
+            <div class="info">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <p>Solo letras minusculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button id="encriptar">Encriptar</button>
+                <button id="desencriptar">Desencriptar</button>
+            </div>
+        </div>
+    </div>
+    <div id="mostrar">
+        <div id="imagenes">
+            <img id="imagen" src="./hola.png" alt="">
+        </div>
+        <div id="pizarra">
+            <p>Aquí aparecerá el texto. Por ahora no se ha encontrado ningún texto.</p>
+        </div>
+        <div id="botoncopiar">
+            <button id="copiar">Copiar</button>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
