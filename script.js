@@ -36,13 +36,13 @@ function encriptacion() {
       textoEncriptado = textoEncriptado.replaceAll('u', 'ufat');
 
       document.getElementById('pizarra').innerHTML = textoEncriptado;
-
+      cambiarFondo();
       document.getElementById('botoncopiar').style.display = 'flex';
 
 
       console.log(texto1);
       console.log(textoEncriptado);
-      cambiarFondo();
+      
       document.getElementById('parrafo').value = "";
       error = false;
    }
@@ -81,12 +81,11 @@ function desencriptacion() {
       textoDesencriptado = textoDesencriptado.replaceAll('ai', 'a');
       textoDesencriptado = textoDesencriptado.replaceAll('ufat', 'u');
       document.getElementById('pizarra').innerHTML = textoDesencriptado;
-
+      cambiarFondo();
       document.getElementById('botoncopiar').style.display = 'flex';
 
       console.log(texto2);
       console.log(textoDesencriptado);
-      cambiarFondo();
       document.getElementById('parrafo').value = "";
       error = false;
    }
