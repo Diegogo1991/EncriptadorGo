@@ -32,7 +32,7 @@ La letra "u" es convertida para "ufat"*/
 //FUNCIÓN ENCRIPTAR
 var btnEncriptar = document.getElementById('encriptar');
 
-const restriccion = /[^a-zñ\s?]+/gm;
+const restriccion = /[^a-z\s?]+/gm;
 
 function encriptacion() {
    let texto = document.getElementById('parrafo').value;
