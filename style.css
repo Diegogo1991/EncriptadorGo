@@ -154,10 +154,10 @@ html {
     width: 100%;
     height: 100%;
     /*background-color: rgba(240, 248, 255, 0.4);*/
-    background: linear-gradient(90deg, rgba(2, 194, 252, 0.2), rgba(81, 2, 105, 0.2));
+    background: linear-gradient(90deg, rgba(2, 194, 252, 0.3), rgba(81, 2, 105, 0.301), rgba(61, 1, 80, 0.4));
     font-family: 'Righteous', cursive;
     font-size: 1.5rem;
-    padding: 4px 10px;
+    padding: 1rem 1rem;
     border-radius: 12px;
     border: none;
     color: aliceblue;
@@ -239,9 +239,9 @@ html {
 #mostrar {
     position: relative;
     /*background-color: rgba(240, 248, 255, 0.4);*/
-    background: linear-gradient(90deg, rgba(81, 2, 105, 0.2), rgba(2, 194, 252, 0.2));
+    background: linear-gradient(90deg, rgba(81, 2, 105, 0.4), rgba(2, 194, 252, 0.3));
     color: aliceblue;
-    width: 40%;
+    width: 30%;
     height: 90vh;
     margin: auto auto;
     display: flex;
@@ -250,6 +250,7 @@ html {
     justify-content: center;
     text-align: center;
     border-radius: 12px;
+    z-index: 5;
 }
 
 #mostrar #pizarra{
@@ -266,7 +267,7 @@ html {
     z-index: 5;
     font-family: 'Righteous', cursive;
     font-size: 1.2rem;
-    padding: 4px 10px;
+    padding: 1rem 1rem;
     overflow-y: auto;
 }
 
