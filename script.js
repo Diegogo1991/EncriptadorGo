@@ -73,7 +73,7 @@ function desencriptacion() {
    else {
       let error = texto.match(restriccion);
       if (error == null) {
-         let textoDesencriptado = texto.replaceAll('enter', 'e').replaceAll('imes', 'i').replaceAll('ober', 'o').replaceAll('ai', 'a').replaceAll('ufat', 'u');
+         let textoDesencriptado = texto.replaceAll('ufat', 'u').replaceAll('ai', 'a').replaceAll('ober', 'o').replaceAll('imes', 'i').replaceAll('enter', 'e');
          document.getElementById('pizarra').innerHTML = textoDesencriptado;
          cambiarFondo();
          document.getElementById('botoncopiar').style.display = 'flex';
