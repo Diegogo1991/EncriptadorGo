@@ -35,7 +35,7 @@ var btnEncriptar = document.getElementById('encriptar');
 const restriccion = /[^a-z\s?]+/gm;
 
 function encriptacion() {
-   let texto = document.getElementById('parrafo').value.toLowerCase();
+   let texto = document.getElementById('parrafo').value;
 
    if (texto.length == 0) {
       document.getElementById('pizarra').innerHTML = "No se encontró ningún texto";
@@ -63,7 +63,7 @@ btnEncriptar.addEventListener('click', encriptacion);
 var btnDesencriptar = document.getElementById('desencriptar');
 
 function desencriptacion() {
-   let texto = document.getElementById('parrafo').value.toLowerCase();
+   let texto = document.getElementById('parrafo').value;
 
    if (texto.length == 0) {
       document.getElementById('pizarra').innerHTML = "No se encontró ningún texto";
