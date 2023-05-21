@@ -269,7 +269,7 @@ html {
     align-items: center;
     margin-top: 1rem;
     height: 80%;
-    width: 100%; /*revisar*/
+    width: 100%; 
     /*background: rgba(250, 0, 175, 0.548);*/
     border-radius: 10px;
     position: absolute;
@@ -278,7 +278,7 @@ html {
     overflow: hidden;
 }
 #mostrar #imagenes img{
-    width: 60%;
+    width: 55%;
     z-index: 1;
     opacity: 0.3;
 }
