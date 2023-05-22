@@ -89,12 +89,20 @@ btnDesencriptar.addEventListener('click', desencriptacion);
 
 //FUNCION COPIAR
 const copiador = document.getElementById('copiar');
-function copiarText() {
-   const textoCopiar = document.getElementById('pizarra');
-   navigator.clipboard.writeText(textoCopiar.textContent);
+
+function leer() {
+   let texto = document.getElementById('pizarra').textContent;
+   return texto;
+}
+
+async function copiar() {
+   let txt = leer();
+   await navigator.clipboard.writeText(txt);
+
    document.getElementById('copiar').textContent = "¡Copiado!"
    document.getElementById('copiar').style.color = "white"
    setTimeout(() => document.getElementById('copiar').textContent = "Copiar", 1000);
    setTimeout(() => document.getElementById('copiar').style.color = "black", 1000);
 }
-copiador.addEventListener('click', copiarText);
+
+copiador.addEventListener('click', copiar);
